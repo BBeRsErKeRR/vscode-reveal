@@ -2,7 +2,7 @@ import { ISlide } from "./ISlide";
 
 export const extensionId = "revealjs"
 
-export const notesSeparator= 'note:'
+export const notesSeparator= 'Note:'
 export const separator= '^\\r?\\n---\\r?\\n$'
 export const verticalSeparator= '^\\r?\\n--\\r?\\n$'
 

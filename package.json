@@ -1,9 +1,9 @@
 {
   "name": "vscode-reveal",
-  "displayName": "vscode-reveal",
+  "displayName": "vscode-reveal-test",
   "description": "Show markdown as revealJs presentation",
-  "version": "4.3.3",
-  "publisher": "evilz",
+  "version": "4.3.4",
+  "publisher": "BBRSERKERR",
   "author": "Vincent Bourdon",
   "license": "MIT",
   "icon": "logo.png",
@@ -97,6 +97,21 @@
       "type": "object",
       "title": "Reveal JS Option Configuration",
       "properties": {
+        "revealjs.separator": {
+          "type": "string",
+          "default": "^\\r?\\n---\\r?\\n$",
+          "description": "Base slides separator"
+        },
+        "revealjs.verticalSeparator": {
+          "type": "string",
+          "default": "^\\r?\\n--\\r?\\n$",
+          "description": "Base vertical slides separator"
+        },
+        "revealjs.notesSeparator": {
+          "type": "string",
+          "default": "Note:",
+          "description": "Base slide notes separator"
+        },
         "revealjs.controlsTutorial": {
           "type": "boolean",
           "default": true,
@@ -489,6 +504,22 @@
             "type": "string"
           },
           "description": "External css file to use"
+        },
+        "revealjs.js": {
+          "type": "array",
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "description": "External js file to use"
+        },
+        "revealjs.external_plugins": {
+          "type": "array",
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "description": "External plugins names to import"
         },
         "revealjs.cssvariables": {
           "type": [

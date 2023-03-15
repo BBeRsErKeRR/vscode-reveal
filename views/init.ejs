@@ -13,6 +13,9 @@
       <% if(enableChalkboard) {%>RevealChalkboard, <%}%>
 			RevealEmbedTweet,
 			RevealChart,
+      <% for(var i=0; i < external_plugins.length; i++) { %>
+      <%= external_plugins[i] %>,
+      <%}%>
 		];
 
 		const plugins =  [...printPlugins,
